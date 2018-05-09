@@ -16,7 +16,7 @@
     </div>
     <div class="img-wrap">
         <a href="/posts/{{ $post->id }}">
-            <img class="img-responsive" src="/assets/img/{{ $post->img }}" alt="">
+            <img class="img-responsive" src="{{ $post->img }}" alt="">
         </a>
     </div>
     <div class="post-excerpt">

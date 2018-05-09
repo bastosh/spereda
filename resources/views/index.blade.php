@@ -16,7 +16,7 @@
                     <div class="padding-50 flex-panel">
                         <div class="row row-no-padding">
                             <div class="col-md-12 nopadding">
-                                <h3 class="font-accident-two-normal uppercase title">Spécialiste de l’imprimé et du numérique</h3>
+                                <h3 class="font-accident-two-normal uppercase title">Spécialiste du numérique et de l’imprimé</h3>
                                 <div class="quote">
                                     <h4 class="font-accident-two-normal uppercase subtitle">Édition, impression, web</h4>
                                     <div class="dividewhite3"></div>
@@ -31,7 +31,8 @@
                                     <div class="col-xs-12 col-sm-11 col-md-9">
                                         <h4 class="font-accident-two-medium uppercase">Productif</h4>
                                         <p class="small">
-                                            La maîtrise des outils que j’utilise au quotidien associée à une capacité rester longtemps concentré me permet d’avancer vite et bien.
+                                            La maîtrise des outils que j’utilise au quotidien associée à une capacité
+                                            à rester concentré me permet d’avancer vite et bien.
                                         </p>
                                     </div>
                                 </div>
@@ -41,9 +42,10 @@
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-1 col-md-3"><i class="flaticon-circle-1 color-blue"></i><div class="dividewhite1"></div></div>
                                     <div class="col-xs-12 col-sm-11 col-md-9">
-                                        <h4 class="font-accident-two-medium uppercase">Perfectionniste</h4>
+                                        <h4 class="font-accident-two-medium uppercase">Organisé</h4>
                                         <p class="small">
-                                            Je ne laisse rien au hasard et je suis très exigeant envers moi-même. Je n’hésite pas à défaire, refaire, jusqu’à être pleinement satisfait.
+                                            J’aime mettre en place des outils pour automatiser ce qui peut l’être et optimiser
+                                            mon flux de travail.
                                         </p>
                                     </div>
                                 </div>
@@ -55,7 +57,7 @@
                                     <div class="col-xs-12 col-sm-11 col-md-9">
                                         <h4 class="font-accident-two-medium uppercase">Curieux</h4>
                                         <p class="small">
-                                            Je ne me lasse jamais d’apprendre, de chercher à comprendre, de découvrir. La routine, ce n’est clairement pas pour moi.
+                                            Je ne me lasse jamais d’apprendre, de chercher à comprendre, de découvrir.
                                         </p>
                                     </div>
                                 </div>
@@ -129,10 +131,10 @@
                                 <li class="date">2014 - 2016</li>
                                 <li class="company uppercase">
                                     <a>
-                                        À domicile
+                                        Filosofia
                                     </a>
                                 </li>
-                                <li class="position">Traducteur</li>
+                                <li class="position">Traducteur indépendant</li>
                             </ul>
                             <ul class="">
                                 <li class="date">2013 - 2015</li>

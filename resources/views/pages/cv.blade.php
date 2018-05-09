@@ -38,9 +38,7 @@
                          data-animation-delay="300"
                          data-animation-distance="20px">
                         <h3 class="font-accident-two-normal uppercase text-center">À propos de moi</h3>
-                        <div class="dividewhite1"></div>
-                        <p class="text-center fontcolor-medium">« On peut connaître tout, excepté soi-même. » – Stendhal</p>
-                        <div class="dividewhite4"></div>
+                        <div class="dividewhite5"></div>
                     </div>
 
                     <div class="row">
@@ -223,7 +221,7 @@
                                 <p class="timeline-time fontcolor-invert">2014 – 2016</p>
                                 <div class="timeline-photo timeline-samuel-02"></div>
                                 <div class="timeline-heading">
-                                    <h4 class="font-accident-two-normal uppercase">À domicile</h4>
+                                    <h4 class="font-accident-two-normal uppercase">Filosofia</h4>
                                     <h6 class="uppercase">Traducteur</h6>
                                     <p>
                                         Relecture et traduction de règles de jeux de société (Camel Up, Pandémie, Mice and Mystics, Terres d’Arles...)

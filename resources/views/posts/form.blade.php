@@ -14,25 +14,10 @@
     <form action="/posts/{{ $post->id }}/comments" method="post">
 
         {{ csrf_field() }}
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="author">Nom<sup>*</sup></label>
-                    <input id="author" type="text" name="author" value="Joe l’Indien" size="60" class="" required>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="email">Adresse e-mail<sup>*</sup></label>
-                    <input id="email" type="text" name="email" value="joe@example.com" size="60" class="" required>
-                </div>
-            </div>
-        </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label for="message">Message<sup>*</sup></label>
+                    <label for="message">Message</label>
                     <textarea id="message" name="message" cols="60" rows="3" class="" required></textarea>
                 </div>
             </div>

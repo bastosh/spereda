@@ -2,18 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Comment;
 use App\Post;
 
 class CommentController extends Controller
 {
-    public function store(Post $post)
+    public function store()
     {
         $this->validate(request(), [
-           'author' => 'required|min:2',
-           'email' => 'required',
            'message' => 'required|min:2',
         ]);
-        $post->addComment(request('author'), request('email'), request('message'));
+
+        auth()->user()->comment(
+            new Comment(request(['message']))
+        );
+
         return back();
     }
 }

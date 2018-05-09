@@ -86,7 +86,7 @@
                                                 <h3>Logo + maquette</h3>
                                                 <p>#design #sketch</p>
                                             </div>
-                                            <a href="portfolio-item-01.html"></a>
+                                            <a href="assets/img/massage.png"></a>
                                         </figcaption>
                                     </figure>
                                 </div>
@@ -108,7 +108,7 @@
                                                 <h3>Illustration vectorielle</h3>
                                                 <p>#design #sketch</p>
                                             </div>
-                                            <a href="portfolio-item-01.html"></a>
+                                            <a href="assets/img/arbre.jpg"></a>
                                         </figcaption>
                                     </figure>
                                 </div>
@@ -241,7 +241,7 @@
                                                 <h3>Affiche</h3>
                                                 <p>#design #sketch</p>
                                             </div>
-                                            <a href="portfolio-item-01.html"></a>
+                                            <a href="assets/img/bourse.png"></a>
                                         </figcaption>
                                     </figure>
                                 </div>
@@ -277,9 +277,9 @@
                                             data-animation-delay="400"
                                             data-animation-distance="100px">
                                         <div class="popup-call">
-                                            <a href="assets/img/gridus.png" class="gallery-item"><i class="flaticon-tool"></i></a>
+                                            <a href="assets/img/spereda.png" class="gallery-item"><i class="flaticon-tool"></i></a>
                                         </div>
-                                        <img src="assets/img/gridus.png" class="img-responsive'" alt="img11"/>
+                                        <img src="assets/img/spereda.png" class="img-responsive'" alt="img11"/>
                                         <figcaption>
                                             <div class="fig-description">
                                                 <h3>Site personnel</h3>

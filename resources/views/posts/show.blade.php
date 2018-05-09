@@ -35,7 +35,9 @@
 
                             @include('posts.comment')
 
-                            @include('posts.form')
+                            @auth
+                                @include('posts.form')
+                            @endauth
 
                             <div class="dividewhite8"></div>
                         </div>

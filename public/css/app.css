@@ -10722,6 +10722,7 @@ section h3 {
 #blog-list .page .post-excerpt {
   margin-bottom: 18px;
   letter-spacing: 0.4px;
+  max-width: 640px;
 }
 
 #blog-list .share-tag-box {
@@ -11770,5 +11771,9 @@ footer.light .copyrights {
 
 .article {
   padding: 40px 200px 40px 150px;
+}
+
+.post-container {
+  padding: 0 100px;
 }
 

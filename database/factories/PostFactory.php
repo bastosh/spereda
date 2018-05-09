@@ -6,12 +6,14 @@ $factory->define(App\Post::class, function (Faker $faker) {
     return [
         'title' => $faker->sentence,
         'slug' => $faker->slug,
-        'img' => $faker->randomElement(['hub.png', 'jeux.jpg', 'apostrophe.jpg']),
+        'img' => $faker->imageUrl(),
         'body' => $faker->paragraphs(5, true),
         'user_id' => function() {
             return factory(App\User::class)->create()->id;
         },
-        'category_id' => $faker->randomElement([1, 2, 3]),
+        'category_id' => function() {
+            return factory(App\Category::class)->create()->id;
+        },
         'created_at' => $faker->dateTimeBetween('-4months'),
     ];
 });

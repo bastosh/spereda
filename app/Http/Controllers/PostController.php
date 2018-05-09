@@ -31,7 +31,7 @@ class PostController extends Controller
             $posts->whereYear('created_at', Carbon::parse($year)->year);
         }
 
-        $posts = $posts->get();
+        $posts = $posts->limit(4)->get();
 
         return view('posts.index', compact('posts'));
     }
@@ -58,12 +58,11 @@ class PostController extends Controller
         $this->validate(request(), [
             'title' => 'required|min:2|max:100',
             'body' => 'required|min:2',
-            'slug' => 'required',
-            'img' => 'required'
+            'slug' => 'required'
         ]);
 
        auth()->user()->publish(
-           new Post(request(['title', 'body', 'category_id', 'slug', 'img',]))
+           new Post(request(['title', 'body', 'img', 'category_id', 'slug']))
        );
 
         return redirect('/posts');

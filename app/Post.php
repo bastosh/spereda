@@ -2,8 +2,6 @@
 
 namespace App;
 
-use Carbon\Carbon;
-
 class Post extends Model
 {
     public function comments()
@@ -11,9 +9,9 @@ class Post extends Model
         return $this->hasMany(Comment::class);
     }
 
-    public function addComment($author, $email, $message)
+    public function addComment($message)
     {
-        $this->comments()->create(compact('author', 'email', 'message'));
+        $this->comments()->create(compact('message'));
     }
 
     public function user()
@@ -33,5 +31,4 @@ class Post extends Model
             ->orderBy('created_at', 'desc')
             ->get();
     }
-
 }

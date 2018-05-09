@@ -10,13 +10,13 @@
             <li class="media">
             <div class="media-left">
                 <a href="#">
-                    <img class="media-object"  alt="64x64" src="/assets/img/joe-l-indien.jpg">
+                    <img class="media-object"  alt="64x64" src="/assets/img/avatars/man.svg">
                 </a>
             </div>
             <div class="media-body">
                 <div class="post-data">
                     <div class="post-date">{{ $comment->created_at }}</div>
-                    <div class="post-author"><a href="#">{{ $comment->author }}</a></div>
+                    <div class="post-author"><a href="#">{{ $comment->user->name }}</a></div>
                 </div>
                 <p>{{ $comment->message }}</p>
             </div>
