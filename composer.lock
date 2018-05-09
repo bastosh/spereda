@@ -1,11 +1,67 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5bca48e56bbf3a25645858fcab9c285",
+    "content-hash": "83606ac994e417abe30fcbf0735c0fa7",
     "packages": [
+        {
+            "name": "approached/laravel-date-international",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/approached/laravel-date-international.git",
+                "reference": "378c3614e7bbaeb5f60b82f68043dd7c73c95b3d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/approached/laravel-date-international/zipball/378c3614e7bbaeb5f60b82f68043dd7c73c95b3d",
+                "reference": "378c3614e7bbaeb5f60b82f68043dd7c73c95b3d",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.0",
+                "nesbot/carbon": "^1.20"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "ext-intl": "to use the component with locales other than \"en\""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Approached\\LaravelDateInternational\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexej Kloos",
+                    "email": "alexejkloos@gmail.com",
+                    "homepage": "http://alcodo.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Date manipulator for laravel",
+            "homepage": "https://github.com/approached/laravel-date-international",
+            "keywords": [
+                "date",
+                "international",
+                "intl",
+                "laravel",
+                "manipulator"
+            ],
+            "time": "2016-10-11T06:59:17+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
@@ -454,6 +510,71 @@
             "time": "2015-04-20T18:58:01+00:00"
         },
         {
+            "name": "jenssegers/date",
+            "version": "v3.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jenssegers/date.git",
+                "reference": "eb9ae6b49001a4b8031404aba52e6145a2dda3af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jenssegers/date/zipball/eb9ae6b49001a4b8031404aba52e6145a2dda3af",
+                "reference": "eb9ae6b49001a4b8031404aba52e6145a2dda3af",
+                "shasum": ""
+            },
+            "require": {
+                "nesbot/carbon": "^1.0",
+                "php": ">=5.4",
+                "symfony/translation": "^2.7|^3.0|^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0|^5.0|^6.0",
+                "satooshi/php-coveralls": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Jenssegers\\Date\\DateServiceProvider"
+                    ],
+                    "aliases": {
+                        "Date": "Jenssegers\\Date\\Date"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jenssegers\\Date\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jens Segers",
+                    "homepage": "https://jenssegers.com"
+                }
+            ],
+            "description": "A date library to help you work with dates in different languages",
+            "homepage": "https://github.com/jenssegers/date",
+            "keywords": [
+                "carbon",
+                "date",
+                "datetime",
+                "i18n",
+                "laravel",
+                "time",
+                "translation"
+            ],
+            "time": "2018-03-01T09:51:53+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v5.6.20",
             "source": {
@@ -654,6 +775,62 @@
                 "psysh"
             ],
             "time": "2018-04-16T12:10:37+00:00"
+        },
+        {
+            "name": "laravelrus/localized-carbon",
+            "version": "v2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LaravelRUS/localized-carbon.git",
+                "reference": "cecdc977c40ed12350bb8444655b0c012b61bb79"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LaravelRUS/localized-carbon/zipball/cecdc977c40ed12350bb8444655b0c012b61bb79",
+                "reference": "cecdc977c40ed12350bb8444655b0c012b61bb79",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": ">=5.5.0",
+                "nesbot/carbon": "^1.24",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravelrus\\LocalizedCarbon\\LocalizedCarbonServiceProvider"
+                    ],
+                    "aliases": {
+                        "LocalizedCarbon": "Laravelrus\\LocalizedCarbon\\LocalizedCarbon",
+                        "DiffFormatter": "Laravelrus\\LocalizedCarbon\\DiffFactoryFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Laravelrus\\LocalizedCarbon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aleksandr Egorov",
+                    "email": "amego2006@gmail.com"
+                }
+            ],
+            "description": "A localizable version of Carbon",
+            "keywords": [
+                "carbon",
+                "date",
+                "datetime",
+                "laravel",
+                "time"
+            ],
+            "time": "2018-04-22T13:14:05+00:00"
         },
         {
             "name": "league/flysystem",

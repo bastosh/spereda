@@ -1,0 +1,51 @@
+/* Main Photo */
+.photo-01 {
+  background: url("/assets/img/seb.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 360px; }
+
+/* Timeline */
+.timeline-samuel-01,
+.timeline-samuel-02,
+.timeline-samuel-03,
+.timeline-samuel-04 {
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
+
+.timeline-samuel-01 {
+  background: url("/assets/img/cso.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-samuel-02 {
+  background: url("/assets/img/jeux-soc.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-samuel-03 {
+  background: url("/assets/img/plato.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-samuel-04 {
+  background: url("/assets/img/plv.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-samuel-05 {
+  background: url("/assets/img/pantone.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-samuel-06 {
+  background: url("/assets/img/livres.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-samuel-07 {
+  background: url("/assets/img/arlea.jpg");
+  background-position: center;
+  background-size: cover; }

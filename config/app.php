@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'fr',
 
     /*
     |--------------------------------------------------------------------------
@@ -160,6 +160,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+
+        Laravelrus\LocalizedCarbon\LocalizedCarbonServiceProvider::class,
+
     ],
 
     /*
@@ -208,6 +211,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        'LocalizedCarbon' => Laravelrus\LocalizedCarbon\LocalizedCarbon::class,
+        'DiffFormatter'   => Laravelrus\LocalizedCarbon\DiffFactoryFacade::class,
 
     ],
 
