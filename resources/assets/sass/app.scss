@@ -1890,7 +1890,10 @@ section {
     margin-top: 80px;
     img {
       width: 64px;
-      height: 64px;
+      //height: 64px;
+      &.custom {
+        width: 58px;
+      }
     }
     .media {
       margin-top: 60px;

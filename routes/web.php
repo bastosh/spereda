@@ -14,6 +14,7 @@ Route::get('posts/{post}', 'PostController@show');
 Route::post('posts', 'PostController@store');
 
 Route::post('posts/{post}/comments', 'CommentController@store');
+Route::post('posts/{post}/guest', 'CommentController@guest');
 
 Auth::routes();
 

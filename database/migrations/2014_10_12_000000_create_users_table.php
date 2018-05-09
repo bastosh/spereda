@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->string('avatar')->default('/assets/img/joe-l-indien.jpg');
+            $table->string('avatar')->default('assets/img/avatars/seb.svg');
             $table->rememberToken();
             $table->timestamps();
         });

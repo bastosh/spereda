@@ -39,6 +39,10 @@
                                 @include('posts.form')
                             @endauth
 
+                            @guest
+                                @include('posts.form-guest')
+                            @endguest
+
                             <div class="dividewhite8"></div>
                         </div>
                         @include('posts.archives')

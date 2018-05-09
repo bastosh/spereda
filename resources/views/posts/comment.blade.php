@@ -10,13 +10,21 @@
             <li class="media">
             <div class="media-left">
                 <a href="#">
-                    <img class="media-object"  alt="64x64" src="/assets/img/avatars/man.svg">
+                    @if($comment->user_id)
+                        <img class="media-object custom" src="/{{ $post->user->avatar }}" width="50">
+                    @else
+                        <img class="media-object" src="/assets/img/avatars/boy.svg">
+                    @endif
                 </a>
             </div>
             <div class="media-body">
                 <div class="post-data">
                     <div class="post-date">{{ $comment->created_at }}</div>
-                    <div class="post-author"><a href="#">{{ $comment->user->name }}</a></div>
+                    @if($comment->user_id)
+                        <div class="post-author"><a href="#">{{ $comment->user->name }}</a></div>
+                    @else
+                        <div class="post-author"><a href="#">{{ $comment->author }}</a></div>
+                    @endif
                 </div>
                 <p>{{ $comment->message }}</p>
             </div>

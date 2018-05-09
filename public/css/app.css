@@ -10805,7 +10805,10 @@ section h3 {
 
 #blog-list #comments img {
   width: 64px;
-  height: 64px;
+}
+
+#blog-list #comments img.custom {
+  width: 58px;
 }
 
 #blog-list #comments .media {
