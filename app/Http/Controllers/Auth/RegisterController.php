@@ -81,7 +81,7 @@ class RegisterController extends Controller
 
         $this->guard()->login($user);
 
-        \Mail::to($user)->send(new Bienvenue($user));
+        \Mail::to($user)->send(new Bienvenue());
 
         session()->flash('message', 'Thank you so much for signing up!');
 

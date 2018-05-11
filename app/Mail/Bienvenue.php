@@ -11,7 +11,7 @@ class Bienvenue extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public function __construct(ContactMessage $message)
+    public function __construct()
     {
         //
     }

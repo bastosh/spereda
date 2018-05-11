@@ -53,7 +53,7 @@ class PostController extends Controller
 
         $post->tags()->attach(Tag::where('id', request('tag'))->get());
 
-        event(new PostPublished($post));
+        //event(new PostPublished($post));
 
         return redirect('/posts');
     }
