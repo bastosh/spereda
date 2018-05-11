@@ -29,7 +29,10 @@
                             @include('posts.preview')
                         @endforeach
                     </div>
-                    @include('posts.archives')
+                    <div class="col-sm-3">
+                        @include('posts.tags')
+                        @include('posts.archives')
+                    </div>
                 </div>
             </div>
 

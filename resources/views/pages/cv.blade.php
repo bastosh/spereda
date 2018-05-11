@@ -5,6 +5,7 @@
 
         <div id="resume" class="inner-content">
 
+            <!-- Heading Block -->
             <section id="page-title" class="inner-section ui-menu-color02">
                 <div class="container-fluid nopadding">
                     <h2 class="font-accident-two-bold color01"
@@ -28,7 +29,9 @@
                     </p>
                 </div>
             </section>
+            <!-- Heading Block -->
 
+            <!-- About Block -->
             <section class="inner-section light bg-color01">
 
                 <div class="container-fluid nopadding">
@@ -82,6 +85,7 @@
                 </div>
 
             </section>
+            <!-- /About Block -->
 
             <!-- Details Block -->
             <section id="m-details" class="inner-section light bg-color02">
@@ -328,6 +332,7 @@
             </section>
             <!-- /Timeline Block -->
 
+            <!-- Education Block -->
             <section class="inner-section light bg-color02">
 
                 <div class="container-fluid nopadding">
@@ -383,7 +388,7 @@
                 </div>
 
             </section>
-
+            <!-- /Education Block -->
 
         </div>
 

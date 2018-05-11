@@ -17,7 +17,7 @@
                         data-animation-duration="300"
                         data-animation-delay="200"
                         data-animation-distance="50px">
-                        <a href="">{{ $post->category->name }}</a> / Posté par <a href="">{{ $post->user->name }}</a> {{ LocalizedCarbon::instance($post->created_at)->diffForHumans() }}
+                        Posté par <a href="">{{ $post->user->name }}</a> {{ LocalizedCarbon::instance($post->created_at)->diffForHumans() }}
                     </p>
                 </div>
             </section>
@@ -45,6 +45,7 @@
 
                             <div class="dividewhite8"></div>
                         </div>
+                        @include('posts.tags')
                         @include('posts.archives')
                     </div>
                 </div>

@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->string('avatar')->default('assets/img/avatars/seb.svg');
+            $table->boolean('subscriber')->default(true);
             $table->rememberToken();
             $table->timestamps();
         });

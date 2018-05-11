@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Mail\Bienvenue;
 use App\User;
 use App\Http\Controllers\Controller;
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -67,7 +70,22 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'avatar' => '/assets/img/joe-l-indien.jpg',
         ]);
+    }
+
+    public function register(Request $request)
+    {
+        $this->validator($request->all())->validate();
+
+        event(new Registered($user = $this->create($request->all())));
+
+        $this->guard()->login($user);
+
+        \Mail::to($user)->send(new Bienvenue($user));
+
+        session()->flash('message', 'Thank you so much for signing up!');
+
+        return $this->registered($request, $user)
+            ?: redirect('/');
     }
 }

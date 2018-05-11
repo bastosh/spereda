@@ -11,7 +11,7 @@
 
     @include('layouts.errors')
 
-    <form action="/posts/{{ $post->id }}/comments" method="post">
+    <form action="/posts/{{ $post->slug }}/comments" method="post">
 
         {{ csrf_field() }}
         <div class="row">

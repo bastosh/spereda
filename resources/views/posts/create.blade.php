@@ -33,10 +33,10 @@
                         <input class="form-control" type="text" id="slug" name="slug" placeholder="slug-de-l-article" required>
                     </div>
                     <div class="form-group">
-                        <label for="category">Catégorie</label>
-                        <select class="form-control" id="category" name="category_id">
-                            @foreach($categories as $category)
-                                <option value="{{ $category->id }}">{{ $category->name }}</option>
+                        <label for="tag">Catégorie</label>
+                        <select multiple class="form-control" id="tag" name="tag">
+                            @foreach($tags as $tag)
+                                <option value="{{ $tag->id }}">{{ $tag->name }}</option>
                             @endforeach
                         </select>
                     </div>

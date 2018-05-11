@@ -3,9 +3,27 @@
 }
 
 .article {
-  padding: 40px 200px 40px 150px;
+  padding: 20px 50px 20px 50px;
+}
+
+@media (min-width: 600px) {
+  .article {
+    padding: 20px 80px 20px 80px;
+  }
+}
+
+@media (min-width: 980px) {
+  .article {
+    padding: 40px 150px 40px 150px;
+  }
 }
 
 .post-container {
-  padding: 0 100px;
+  padding: 0 40px;
+}
+
+@media (min-width: 600px) {
+  .post-container {
+    padding: 0 100px;
+  }
 }

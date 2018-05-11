@@ -11,7 +11,7 @@
 
     @include('layouts.errors')
 
-    <form action="/posts/{{ $post->id }}/guest" method="post">
+    <form action="/posts/{{ $post->slug }}/guest" method="post">
 
         {{ csrf_field() }}
 

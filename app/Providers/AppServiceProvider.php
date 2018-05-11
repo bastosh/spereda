@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Demo\Test;
 use App\Post;
+use App\Tag;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -14,9 +16,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //setlocale(LC_TIME, 'fr_FR');
         view()->composer(['posts.index', 'posts.show'], function($view) {
             $view->with('archives', Post::archives());
+            $view->with('tags', Tag::has('posts')->pluck('name'));
         });
     }
 
@@ -27,6 +29,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
+        \App::bind(Test::class, function(){
+            return new Test(config('services.demo.secret'));
+        });
     }
 }

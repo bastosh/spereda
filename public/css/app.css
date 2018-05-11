@@ -10426,29 +10426,29 @@ section h3 {
 
 /* ------------------------------------ Feedback Page */
 
-#feedback .feedback .wpcf7-form span.wpcf7-form-control-wrap {
+#contacts .feedback .wpcf7-form span.wpcf7-form-control-wrap {
   position: relative;
 }
 
-#feedback .feedback .wpcf7-form .left-field {
+#contacts .feedback .wpcf7-form .left-field {
   float: left;
 }
 
-#feedback .feedback .wpcf7-form .right-field {
+#contacts .feedback .wpcf7-form .right-field {
   float: right;
 }
 
-#feedback .feedback .wpcf7-form .left-field,
-#feedback .feedback .wpcf7-form .right-field {
+#contacts .feedback .wpcf7-form .left-field,
+#contacts .feedback .wpcf7-form .right-field {
   width: calc(50% - 5px);
 }
 
-#feedback .feedback .wpcf7-form input[type="text"],
-#feedback .feedback .wpcf7-form input[type="email"],
-#feedback .feedback .wpcf7-form input[type="password"],
-#feedback .feedback .wpcf7-form input[type="search"],
-#feedback .feedback .wpcf7-form input[type="url"],
-#feedback .feedback .wpcf7-form textarea {
+#contacts .feedback .wpcf7-form input[type="text"],
+#contacts .feedback .wpcf7-form input[type="email"],
+#contacts .feedback .wpcf7-form input[type="password"],
+#contacts .feedback .wpcf7-form input[type="search"],
+#contacts .feedback .wpcf7-form input[type="url"],
+#contacts .feedback .wpcf7-form textarea {
   padding: 12px 15px;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07), 0 0 0 2px rgba(0, 0, 0, 0) inset;
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07), 0 0 0 2px rgba(0, 0, 0, 0) inset;
@@ -10466,30 +10466,30 @@ section h3 {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#feedback .feedback .wpcf7-form input[type="submit"] {
+#contacts .feedback .wpcf7-form input[type="submit"] {
   width: auto;
 }
 
-#feedback .feedback #form-messages .alert {
+#contacts .feedback #form-messages .alert {
   border-radius: 0;
 }
 
-#feedback .feedback-dark input[type="text"],
-#feedback .feedback-dark input[type="email"],
-#feedback .feedback-dark input[type="password"],
-#feedback .feedback-dark input[type="search"],
-#feedback .feedback-dark input[type="url"],
-#feedback .feedback-dark textarea {
+#contacts .feedback-dark input[type="text"],
+#contacts .feedback-dark input[type="email"],
+#contacts .feedback-dark input[type="password"],
+#contacts .feedback-dark input[type="search"],
+#contacts .feedback-dark input[type="url"],
+#contacts .feedback-dark textarea {
   color: #ffffff;
   background-color: #f7f7f7 !important;
 }
 
-#feedback .feedback-light input[type="text"],
-#feedback .feedback-light input[type="email"],
-#feedback .feedback-light input[type="password"],
-#feedback .feedback-light input[type="search"],
-#feedback .feedback-light input[type="url"],
-#feedback .feedback-light textarea {
+#contacts .feedback-light input[type="text"],
+#contacts .feedback-light input[type="email"],
+#contacts .feedback-light input[type="password"],
+#contacts .feedback-light input[type="search"],
+#contacts .feedback-light input[type="url"],
+#contacts .feedback-light textarea {
   color: #2f2f2f;
   background-color: #ffffff !important;
 }
@@ -11162,6 +11162,7 @@ footer input {
   height: 31px;
 }
 
+footer button.btn,
 footer a.btn {
   padding: 7px 9px 5px 9px;
   margin-top: -1px;
@@ -11172,6 +11173,8 @@ footer p {
   font-size: 13px;
 }
 
+footer button.btn:hover,
+footer button.btn:focus,
 footer a:hover,
 footer a:focus {
   text-decoration: none;
@@ -11227,10 +11230,13 @@ footer.dark .cv-link a:hover {
   background: #e74c3c;
 }
 
+footer.dark button.btn,
 footer.dark a.btn {
   background: #3498db;
 }
 
+footer.dark button.btn:hover,
+footer.dark button.btn:focus,
 footer.dark a.btn:hover,
 footer.dark a.btn:focus {
   background: #e74c3c;
@@ -11773,10 +11779,28 @@ footer.light .copyrights {
 }
 
 .article {
-  padding: 40px 200px 40px 150px;
+  padding: 20px 50px 20px 50px;
+}
+
+@media (min-width: 600px) {
+  .article {
+    padding: 20px 80px 20px 80px;
+  }
+}
+
+@media (min-width: 980px) {
+  .article {
+    padding: 40px 150px 40px 150px;
+  }
 }
 
 .post-container {
-  padding: 0 100px;
+  padding: 0 40px;
+}
+
+@media (min-width: 600px) {
+  .post-container {
+    padding: 0 100px;
+  }
 }
 

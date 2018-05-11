@@ -4,18 +4,20 @@
          data-animation-delay="500"
          data-animation-distance="30px">
     <div class="post-detail">
-        <div class="meta-cat">
-            <a href="#!" class="category tag">{{ $post->category->name }}</a>
-        </div>
+        @foreach($post->tags as $tag)
+            <div class="meta-cat">
+                <a href="/posts/tags/{{ $tag->name }}" class="category tag">{{ $tag->name }}</a>
+            </div>
+        @endforeach
         <div class="dividewhite2"></div>
-        <h3 class="entry-title"><a href="/posts/{{ $post->id }}">{{ $post->title }}</a></h3>
+        <h3 class="entry-title"><a href="/posts/{{ $post->slug }}">{{ $post->title }}</a></h3>
         <div class="metas">
             <a href="#!" class="meta-date">{{ LocalizedCarbon::instance($post->created_at)->diffForHumans() }}</a>/&nbsp;
             Posté par <a href="#!" class="meta-author">{{ $post->user->name }}</a>
         </div>
     </div>
     <div class="img-wrap">
-        <a href="/posts/{{ $post->id }}">
+        <a href="/posts/{{ $post->slug }}">
             <img class="img-responsive" src="{{ $post->img }}" alt="">
         </a>
     </div>
@@ -23,6 +25,6 @@
         <p><?= substr($post->body, 0, 500).'...' ?></p>
     </div>
     <div class="">
-        <a href="/posts/{{ $post->id }}" class="btn btn-default btn-darker">Continuer la lecture...</a>
+        <a href="/posts/{{ $post->slug }}" class="btn btn-default btn-darker">Continuer la lecture...</a>
     </div>
 </article>

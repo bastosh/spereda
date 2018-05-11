@@ -1623,7 +1623,7 @@ section {
 
 /* ------------------------------------ Feedback Page */
 
-#feedback {
+#contacts{
 
   .feedback {
     .wpcf7-form {
@@ -2154,12 +2154,12 @@ footer {
     width: 80%;
     height: 31px;
   }
-  a.btn {
+  button.btn, a.btn {
     padding: 7px 9px 5px 9px;
     margin-top: -1px;
   }
   p {  padding-top: 10px;  font-size: 13px;  }
-  a:hover, a:focus {  text-decoration: none;  }
+  button.btn:hover, button.btn:focus, a:hover, a:focus {  text-decoration: none;  }
   .follow {
     margin-top: 21px;
     .social li a i {
@@ -2190,7 +2190,7 @@ footer.dark {
     background: $color17;
     &:hover {background: $hovercolor;}
   }
-  a.btn {
+  button.btn, a.btn {
     background: $blue;
     &:hover, &:focus {
       background: $hovercolor;

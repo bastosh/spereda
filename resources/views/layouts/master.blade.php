@@ -14,6 +14,15 @@
 </head>
 
 <body id="samuel" class="boxed">
+@include('layouts.errors')
+@if($flash = session('message'))
+    <div class="alert alert-success alert-dismissible">
+    {{ $flash }}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+@endif
 
 @include('layouts.header')
 

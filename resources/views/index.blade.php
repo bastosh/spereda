@@ -109,6 +109,7 @@
 
             <div class="row flex-row">
 
+                <!-- Experience -->
                 <div id="pro-experience" class="col-md-4 flex-column dark nopadding ui-block-color02 flex-col"
                      data-animation-origin="bottom"
                      data-animation-duration="300"
@@ -159,6 +160,9 @@
                         <div class="dividewhite1"></div>
                     </div>
                 </div>
+                <!-- /Experience -->
+
+                <!-- Skills -->
                 <div id="circle-skills" class="col-md-8 flex-column dark nopadding ui-block-color03 flex-col" data-section="progress"
                      data-animation-origin="right"
                      data-animation-duration="400"
@@ -229,6 +233,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- /Skills -->
 
             </div>
 

@@ -19,9 +19,9 @@ class Post extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function category()
+    public function tags()
     {
-        return $this->belongsTo(Category::class);
+        return $this->belongsToMany(Tag::class);
     }
 
     public static function archives()
@@ -30,5 +30,10 @@ class Post extends Model
             ->groupBy('year', 'month')
             ->orderBy('created_at', 'desc')
             ->get();
+    }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
     }
 }

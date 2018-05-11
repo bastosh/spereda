@@ -2,9 +2,9 @@
 
 @section('content')
     <main class="content-wrap">
-
         <div id="portfolio" class="inner-content">
 
+            <!-- Heading Block -->
             <section id="page-title" class="inner-section ui-menu-color03">
                 <div class="container-fluid nopadding">
                     <h2 class="font-accident-two-bold color01"
@@ -19,6 +19,7 @@
                         data-animation-distance="50px">« Les paroles s’envolent, les écrits restent. »</h4>
                 </div>
             </section>
+            <!-- /Heading Block -->
 
             <!-- Portfolio Block -->
             <section id="portfolio-block" class="inner-section" data-section="portfolio">
@@ -302,6 +303,5 @@
             <!-- /Portfolio Block -->
 
         </div>
-
     </main>
 @endsection

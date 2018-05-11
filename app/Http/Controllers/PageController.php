@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\ContactMessage;
+
 class PageController extends Controller
 {
 
@@ -15,13 +17,30 @@ class PageController extends Controller
         return view('pages.cv');
     }
 
-    public function coordonnees()
-    {
-        return view('pages.coordonnees');
-    }
-
     public function contact()
     {
         return view('pages.contact');
+    }
+
+    public function sendMail()
+    {
+        $this->validate(request(), [
+            'name' => 'required|min:2|max:100',
+            'email' => 'required|email',
+            'body' => 'required|min:2'
+        ]);
+
+        $message = new ContactMessage();
+
+        $message->name = request('name');
+        $message->email = request('email');
+        $message->body = request('body');
+
+        \Mail::to('sebastien.pereda@gmail.com')->send(new ContactMessage($message));
+    }
+
+    public function about()
+    {
+        return view('pages.about');
     }
 }
