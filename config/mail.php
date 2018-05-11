@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'sebastien@web-artisan.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'contact@bastoche.fr'),
         'name' => env('MAIL_FROM_NAME', 'Sébastien Pereda'),
     ],
 
