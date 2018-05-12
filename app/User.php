@@ -42,10 +42,11 @@ class User extends Authenticatable
         $this->posts()->save($post);
     }
 
-    public function comment()
+    public function comment(Post $post)
     {
         $this->comments()->create([
-            'post_id' => auth()->id(),
+            'user_id' => auth()->id(),
+            'post_id' => $post->id(),
             'message' => request('message')
         ]);
     }
