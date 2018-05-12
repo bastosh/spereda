@@ -7,15 +7,17 @@ use App\Post;
 
 class CommentController extends Controller
 {
-    public function store()
+    public function store(Post $post)
     {
         $this->validate(request(), [
            'message' => 'required|min:2',
         ]);
 
-        auth()->user()->comment(
+       /* auth()->user()->comment(
             new Comment(request(['message']))
-        );
+        );*/
+
+       $post->addComment(request('message'));
 
         return back();
     }

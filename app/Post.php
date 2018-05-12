@@ -11,7 +11,12 @@ class Post extends Model
 
     public function addComment($message)
     {
-        $this->comments()->create(compact('message'));
+        //$this->comments()->create(compact('message'));
+        Comment::create([
+            'message' => $message,
+            'post_id' => $this->id,
+            'user_id' => auth()->id()
+        ]);
     }
 
     public function user()
@@ -26,9 +31,9 @@ class Post extends Model
 
     public static function archives()
     {
-        return static::selectRaw('created_at, year(created_at) year, monthname(created_at) month, count(*) published')
-            ->groupBy('created_at', 'year', 'month')
-            ->orderBy('created_at', 'desc')
+        return static::selectRaw('year(created_at) year, monthname(created_at) month, count(*) published')
+            ->groupBy('year', 'month')
+            ->orderByRaw('min(created_at) desc')
             ->get();
     }
 

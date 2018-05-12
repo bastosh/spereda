@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Events\PostPublished;
 use App\Post;
 use App\Post_Tag;
 use App\Tag;

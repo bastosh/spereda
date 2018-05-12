@@ -22,7 +22,7 @@
         </a>
     </div>
     <div class="post-excerpt">
-        <p><?= substr($post->body, 0, 500).'...' ?></p>
+        <p><?= substr($post->body, 0, 600).'...' ?></p>
     </div>
     <div class="">
         <a href="/posts/{{ $post->slug }}" class="btn btn-default btn-darker">Continuer la lecture...</a>

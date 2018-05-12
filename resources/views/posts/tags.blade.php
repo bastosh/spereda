@@ -4,8 +4,8 @@
     <ol class="list-unstyled">
         @foreach($tags as $tag)
             <li>
-                <a href="/posts/tags/{{ $tag }}">
-                    {{ $tag }}
+                <a href="/posts/tags/{{ $tag->name }}">
+                    {{ $tag->name }}
                 </a>
             </li>
             <div class="dividewhite1"></div>

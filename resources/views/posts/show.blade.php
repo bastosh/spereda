@@ -29,7 +29,7 @@
                 <div class="container-fluid nopadding">
                     <div class="row">
                         <div class="col-sm-9 article">
-                            <?= nl2br($post->body) ?>
+                            <?= ($post->body) ?>
 
                             <div class="dividewhite5"></div>
 
