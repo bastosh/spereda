@@ -5,7 +5,7 @@
         @foreach($archives as $archive)
             <li>
                 <a href="/posts?year={{ $archive->year }}&month={{ $archive->month }}">
-                    {{ $archive->month }} {{ $archive->year }} ({{ $archive->published }})
+                    {{ __($archive->month) }} {{ $archive->year }} ({{ $archive->published }})
                 </a>
             </li>
             <div class="dividewhite1"></div>

@@ -13,4 +13,3 @@ return array(
     'november' => 'Novembre',
     'december' => 'Décembre'
 );
-?>
