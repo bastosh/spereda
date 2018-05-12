@@ -32,7 +32,7 @@
                                         <h4 class="font-accident-two-medium uppercase">Productif</h4>
                                         <p class="small">
                                             La maîtrise des outils que j’utilise au quotidien associée à une capacité
-                                            à rester concentré me permet d’avancer vite et bien.
+                                            à rester concentré me permet d’avancer vite.
                                         </p>
                                     </div>
                                 </div>
@@ -63,7 +63,6 @@
                                 </div>
                                 <div class="divider-dynamic"></div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -173,8 +172,8 @@
                         <div class="dividewhite1"></div>
                         <div class="row">
 
-                            <div class="col-md-4 col-sm-4 col-xs-12 nopadding">
-                                <div class="progressbar text-center">
+                            <div class="col-sm-4 col-xs-12 nopadding">
+                                <div class="progressbar">
                                     <div id="circle1"
                                          data-progressbar="circle"
                                          data-progressbar-color="#fff"
@@ -183,6 +182,9 @@
                                          data-progressbar-from='{"color": "#3498db", "width": 4}'
                                          data-progressbar-value="0.7">
                                     </div>
+                                </div>
+                                <div class="dividewhite1"></div>
+                                <div class="text-center">
                                     <h4 class="font-accident-two-bold uppercase">Communication</h4>
                                     <p class="font-regular-normal small">
                                         Réalisation de support visuels (brochures, plaquettes, affiches, flyers, marque-pages, cartes de visite), rédaction d’articles, reportages photo ou vidéo.
@@ -192,7 +194,7 @@
                                 <div class="dividewhite1"></div>
                             </div>
 
-                            <div class="col-md-4 col-sm-4 col-xs-12 nopadding">
+                            <div class="col-sm-4 col-xs-12 nopadding">
                                 <div class="progressbar text-center">
                                     <div id="circle2"
                                          data-progressbar="circle"
@@ -202,6 +204,9 @@
                                          data-progressbar-from='{"color": "#3498db", "width": 4}'
                                          data-progressbar-value="0.8">
                                     </div>
+                                </div>
+                                <div class="dividewhite1"></div>
+                                <div class="text-center">
                                     <h4 class="font-accident-two-bold uppercase">Développement web</h4>
                                     <p class="font-regular-normal small">
                                         Réalisation de sites web (sites vitrines, portfolios, blogs). Maîtrise de frameworks front-end (Bootstrap, Foundation) et back-end (Symfony, Laravel).
@@ -211,7 +216,7 @@
                                 <div class="dividewhite1"></div>
                             </div>
 
-                            <div class="col-md-4 col-sm-4 col-xs-12 nopadding">
+                            <div class="col-sm-4 col-xs-12 nopadding">
                                 <div class="progressbar text-center">
                                     <div id="circle3"
                                          data-progressbar="circle"
@@ -221,6 +226,9 @@
                                          data-progressbar-from='{"color": "#3498db", "width": 4}'
                                          data-progressbar-value="0.9">
                                     </div>
+                                </div>
+                                <div class="dividewhite1"></div>
+                                <div class="text-center">
                                     <h4 class="font-accident-two-bold uppercase">Édition</h4>
                                     <p class="font-regular-normal small">
                                         Traduction, relecture, correction, recherches iconographiques, mise en pages, fabrication.

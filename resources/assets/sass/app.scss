@@ -1085,7 +1085,7 @@ section {
 #circle-skills {
   .btn {margin-right: 0!important;}
   .progressbar {
-    margin: 16px;
+    margin: 16px 0;
     h4 {  margin-top: 24px;  letter-spacing: 1px;  }
     p {  line-height: 1.5em;  }
     .progressbar-text {  font-size: 21px;  }
@@ -1126,6 +1126,8 @@ section {
   }
 }
 #circle-skills.dark {
+  p {color: $color01;}
+  h4 {color: $color01;}
   .progressbar {
     .progressbar-text {color: $color01;}
     color: $color01;

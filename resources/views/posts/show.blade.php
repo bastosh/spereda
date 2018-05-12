@@ -31,8 +31,6 @@
                         <div class="col-sm-9 article">
                             <?= ($post->body) ?>
 
-                            <div class="dividewhite5"></div>
-
                             @include('posts.comment')
 
                             @auth

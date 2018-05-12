@@ -7243,7 +7243,7 @@ h6 a {
 /* Paragraphs */
 
 .small {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .extrasmall {
@@ -9664,7 +9664,7 @@ section h3 {
 }
 
 #circle-skills .progressbar {
-  margin: 16px;
+  margin: 16px 0;
 }
 
 #circle-skills .progressbar h4 {
@@ -9730,6 +9730,14 @@ section h3 {
 
 #circle-skills.light .progressbar.semicircle .progressbar-text {
   background: #e7e7e7;
+  color: #ffffff;
+}
+
+#circle-skills.dark p {
+  color: #ffffff;
+}
+
+#circle-skills.dark h4 {
   color: #ffffff;
 }
 
@@ -11531,20 +11539,24 @@ footer.light .copyrights {
 }
 
 @media (max-width: 543px) {
+  #top-navigation .ident .vc-name .name h1 {
+    font-size: 36px;
+  }
+
   h5 {
     letter-spacing: 0;
   }
 
   .divider-dynamic {
-    height: 40px;
+    height: 0;
   }
 
   .padding-50 {
-    padding: 30px 14px 35px 14px;
+    padding: 30px 30px 35px 30px;
   }
 
   .inner-content .inner-section {
-    padding: 30px 14px !important;
+    padding: 30px 30px !important;
   }
 
   ul.timeline-vert > li > .timeline-panel {
@@ -11620,15 +11632,79 @@ footer.light .copyrights {
   }
 
   .superheading {
-    font-size: 36px;
+    font-size: 24px;
+    padding-bottom: 20px;
   }
 
   .heading {
-    font-size: 24px;
+    font-size: 20px;
+    padding-bottom: 20px;
   }
 
   .inner-content .inner-block {
     padding: 0 20px;
+  }
+
+  p.small {
+    font-size: 16px;
+  }
+
+  #personal .box .one {
+    width: 100%;
+  }
+
+  #personal .box .two {
+    width: 100%;
+  }
+
+  #circle-skills .text-center {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  blockquote {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  blockquote footer {
+    padding-top: 0 !important;
+    padding-bottom: 20px !important;
+  }
+
+  blockquote:before {
+    width: 35px;
+    height: 22px;
+    background-size: 35px 22px;
+  }
+
+  #blog-list p {
+    font-size: 14px;
+  }
+
+  #blog-list p.superheading {
+    font-size: 24px;
+  }
+
+  #blog-list pre {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    word-break: normal;
+  }
+
+  #blog-list pre > code {
+    font-size: 12px;
+  }
+
+  #blog-list article p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  figure img {
+    max-width: 250px;
   }
 }
 
@@ -11779,7 +11855,7 @@ footer.light .copyrights {
 }
 
 .article {
-  padding: 20px 50px 20px 50px;
+  padding: 20px 30px 20px 30px;
 }
 
 @media (min-width: 600px) {
@@ -11792,10 +11868,6 @@ footer.light .copyrights {
   .article {
     padding: 40px 150px 40px 150px;
   }
-}
-
-.post-container {
-  padding: 0 40px;
 }
 
 @media (min-width: 600px) {

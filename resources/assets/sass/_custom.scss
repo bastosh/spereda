@@ -3,8 +3,9 @@
 }
 
 .article {
-  padding: 20px 50px 20px 50px;
+  padding: 20px 30px 20px 30px;
 }
+
 
 @media (min-width: 600px) {
   .article {
@@ -16,10 +17,6 @@
   .article {
     padding: 40px 150px 40px 150px;
   }
-}
-
-.post-container {
-  padding: 0 40px;
 }
 
 @media (min-width: 600px) {

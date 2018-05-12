@@ -24,7 +24,7 @@
 
             <div class="container-fluid nopadding">
                 <div class="row">
-                    <div class="col-sm-9 post-container">
+                    <div class="col-sm-9">
                         @foreach($posts as $post)
                             @include('posts.preview')
                         @endforeach

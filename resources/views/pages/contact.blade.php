@@ -52,8 +52,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="dividewhite1"></div>
-
+                    <div class="dividewhite8"></div>
                 </div>
             </section>
         </div>
